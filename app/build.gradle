@@ -15,6 +15,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,6 +37,7 @@ android {
     viewBinding{
         enable = true
     }
+
 }
 
 dependencies {
@@ -65,4 +67,6 @@ dependencies {
     implementation "androidx.activity:activity-ktx:1.5.1"
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation 'com.android.support:multidex:1.0.3'
 }
